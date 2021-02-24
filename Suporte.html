@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style suporte.css" type="text/css" rel="stylesheet">
+    <title>Suporte</title>
+</head>
+<body>
+    <p id ="voltarmenu" align="center"><a href="index.html"><button>Voltar ao MENU</button></a></p>
+    <form>
+        <fieldset id ="utilizador">
+            <legend>Dados pessoais</legend>
+            
+            <p>Primeiro nome: <input type="text" name="nnome" id="inome" size="30" maxlength="90" placeholder="Introduza o seu primeiro nome"></p>
+            <p>Último nome: <input type="text" name="nnome" id="inome2" size="30" maxlength="90" placeholder="Introduza o seu último nome"></p>
+            <p>Password: <input type="password" name="npassword" id="ipassword" size="10" maxlength="10" placeholder="Max 10 digitos"></p>
+            <p>Email: <input type="email" name="nemail" id="iemail" size="40" maxlength="40" placeholder="Introduza o seu email"></p>
+            <p>Género: <select name="ngenero" id="igenero"></p>
+                            <option id="opcao">Escolha o seu genero</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                       </select>
+    
+            <p>Data de Nascimento: <input type="date" name="dnasc" id="inasc"></p>
+                        
+        </fieldset>
+        <fieldset id="msg">
+
+            <legend>Mensagem</legend>
+            
+            <textarea name="nmsg" id="imsg" cols="100" rows="5" placeholder="Escreva a sua mensagem"></textarea></p>
+            
+        </fieldset>
+            <p align="center"><input class="enviar"type="submit" value="Enviar" onclick="enviar()">
+    </form>
+
+    <div id="texto"></div>
+       <script>
+
+function enviar(){
+                var primeiro = window.document.getElementById("inome").value
+                var segundo = window.document.getElementById("inome2").value
+                var genero = window.document.getElementById('igenero').value
+                var s =  window.document.getElementById("texto")
+ 
+                if(genero == "Masculino"){
+                    var agradecer = `Obrigado`
+                }else{
+                    var agradecer = `Obrigada`
+                }
+                window.confirm(` ${agradecer} ${primeiro}, a sua mensagem foi enviada`)
+                return true
+            }
+        </script>
+</body>
+</html>

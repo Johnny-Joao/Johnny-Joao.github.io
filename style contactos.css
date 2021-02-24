@@ -1,0 +1,14 @@
+body{
+	font-family: Comic Sans MS;
+	background-color: #063146;
+	color: white;
+	font-size: 70px;
+	margin-top: 150px;
+}
+body img{
+	width: 300px;
+	height: 300px;
+}
+audio{
+	margin-top: 20px;
+}

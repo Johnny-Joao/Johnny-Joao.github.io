@@ -1,0 +1,53 @@
+/*-----------------------------------------------PERSONALIZAÇÃO DOS LINKS-----------------------------------------------*/
+#utilizador{
+	color: black;
+	font-family: calibri;
+	text-align: center;
+	color: white;
+	border: 5px solid white;
+}
+#msg{
+	color: black;
+	font-family: calibri;
+	text-align: center;
+	color: white;
+	border: 5px solid white;
+
+}
+legend{
+	font-size: 45px;
+	text-align: left;
+}
+body{
+	background-color: #063146;
+	font-size: 22px;
+}
+input{
+	font-size: 16px;
+}
+.enviar{
+	font-size: 20px;
+
+}
+select{
+	font-size: 16px;
+}
+a{
+	color: white;
+		
+}
+#voltarmenu a{
+	font-size: 30px;
+	font-family: calibri;	
+}
+#voltarmenu a:hover{
+	color: #808080;
+}
+button{
+	font-size: 30px;
+	cursor: pointer;
+}
+#texto{
+	color:white;
+	text-align: center;
+}
